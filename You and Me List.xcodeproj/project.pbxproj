@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA02A9AA1B02A67F00CE2102 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */; };
 		DA22BE971AD87A9900A7E210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE961AD87A9900A7E210 /* AppDelegate.swift */; };
 		DA22BE9A1AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE981AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld */; };
-		DA22BE9C1AD87A9900A7E210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE9B1AD87A9900A7E210 /* ViewController.swift */; };
+		DA22BE9C1AD87A9900A7E210 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE9B1AD87A9900A7E210 /* ChecklistViewController.swift */; };
 		DA22BE9F1AD87A9900A7E210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA22BE9D1AD87A9900A7E210 /* Main.storyboard */; };
 		DA22BEA11AD87A9900A7E210 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA22BEA01AD87A9900A7E210 /* Images.xcassets */; };
 		DA22BEA41AD87A9900A7E210 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA22BEA21AD87A9900A7E210 /* LaunchScreen.xib */; };
 		DA22BEB01AD87A9900A7E210 /* You_and_Me_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22BEAF1AD87A9900A7E210 /* You_and_Me_ListTests.swift */; };
+		DA22BEBA1AD87ABA00A7E210 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA22BEB91AD87ABA00A7E210 /* iAd.framework */; };
+		DA3986F31B6AE2E90098FFDB /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3986F21B6AE2E90098FFDB /* IconPickerViewController.swift */; };
+		DA5E96671AEEBF67003306EE /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E96661AEEBF67003306EE /* ItemDetailViewController.swift */; };
+		DA81A5FE1B30DA8C002C40D1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81A5FD1B30DA8C002C40D1 /* DataModel.swift */; };
+		DA91AA1D1BBB404500FFFA80 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA91AA1C1BBB404500FFFA80 /* CloudKit.framework */; };
+		DA9B46C01ADC7CE900680F16 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B46BF1ADC7CE900680F16 /* ChecklistItem.swift */; };
+		DAAAB2D01B014BF9003E8D15 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAAB2CF1B014BF9003E8D15 /* AllListsViewController.swift */; };
+		DAAAB2D21B015299003E8D15 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAAB2D11B015299003E8D15 /* Checklist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +36,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ListDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA22BE911AD87A9900A7E210 /* You and Me List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "You and Me List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA22BE951AD87A9900A7E210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA22BE961AD87A9900A7E210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA22BE991AD87A9900A7E210 /* You_and_Me_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = You_and_Me_List.xcdatamodel; sourceTree = "<group>"; };
-		DA22BE9B1AD87A9900A7E210 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA22BE9B1AD87A9900A7E210 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChecklistViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA22BE9E1AD87A9900A7E210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA22BEA01AD87A9900A7E210 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA22BEA31AD87A9900A7E210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DA22BEA91AD87A9900A7E210 /* You and Me ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "You and Me ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA22BEAE1AD87A9900A7E210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA22BEAF1AD87A9900A7E210 /* You_and_Me_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You_and_Me_ListTests.swift; sourceTree = "<group>"; };
+		DA22BEB91AD87ABA00A7E210 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DA3986F21B6AE2E90098FFDB /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
+		DA5E96661AEEBF67003306EE /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DA81A5FD1B30DA8C002C40D1 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DA91AA1B1BBB403D00FFFA80 /* You and Me List.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "You and Me List.entitlements"; sourceTree = "<group>"; };
+		DA91AA1C1BBB404500FFFA80 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DA9B46BF1ADC7CE900680F16 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChecklistItem.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DAAAB2CF1B014BF9003E8D15 /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AllListsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DAAAB2D11B015299003E8D15 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Checklist.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA22BEBA1AD87ABA00A7E210 /* iAd.framework in Frameworks */,
+				DA91AA1D1BBB404500FFFA80 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,8 @@
 		DA22BE881AD87A9900A7E210 = {
 			isa = PBXGroup;
 			children = (
+				DA91AA1C1BBB404500FFFA80 /* CloudKit.framework */,
+				DA22BEB91AD87ABA00A7E210 /* iAd.framework */,
 				DA22BE931AD87A9900A7E210 /* You and Me List */,
 				DA22BEAC1AD87A9900A7E210 /* You and Me ListTests */,
 				DA22BE921AD87A9900A7E210 /* Products */,
@@ -79,8 +102,9 @@
 		DA22BE931AD87A9900A7E210 /* You and Me List */ = {
 			isa = PBXGroup;
 			children = (
+				DA91AA1B1BBB403D00FFFA80 /* You and Me List.entitlements */,
 				DA22BE961AD87A9900A7E210 /* AppDelegate.swift */,
-				DA22BE9B1AD87A9900A7E210 /* ViewController.swift */,
+				DA22BE9B1AD87A9900A7E210 /* ChecklistViewController.swift */,
 				DA22BE9D1AD87A9900A7E210 /* Main.storyboard */,
 				DA22BEA01AD87A9900A7E210 /* Images.xcassets */,
 				DA22BEA21AD87A9900A7E210 /* LaunchScreen.xib */,
@@ -93,6 +117,13 @@
 		DA22BE941AD87A9900A7E210 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAAAB2CF1B014BF9003E8D15 /* AllListsViewController.swift */,
+				DAAAB2D11B015299003E8D15 /* Checklist.swift */,
+				DA3986F21B6AE2E90098FFDB /* IconPickerViewController.swift */,
+				DA9B46BF1ADC7CE900680F16 /* ChecklistItem.swift */,
+				DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */,
+				DA5E96661AEEBF67003306EE /* ItemDetailViewController.swift */,
+				DA81A5FD1B30DA8C002C40D1 /* DataModel.swift */,
 				DA22BE951AD87A9900A7E210 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -159,11 +190,19 @@
 		DA22BE891AD87A9900A7E210 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Paul Prestwood";
 				TargetAttributes = {
 					DA22BE901AD87A9900A7E210 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 8WJ67274W7;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					DA22BEA81AD87A9900A7E210 = {
 						CreatedOnToolsVersion = 6.3;
@@ -215,9 +254,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA22BE9C1AD87A9900A7E210 /* ViewController.swift in Sources */,
+				DA22BE9C1AD87A9900A7E210 /* ChecklistViewController.swift in Sources */,
+				DA5E96671AEEBF67003306EE /* ItemDetailViewController.swift in Sources */,
+				DA9B46C01ADC7CE900680F16 /* ChecklistItem.swift in Sources */,
+				DA3986F31B6AE2E90098FFDB /* IconPickerViewController.swift in Sources */,
+				DAAAB2D01B014BF9003E8D15 /* AllListsViewController.swift in Sources */,
+				DA02A9AA1B02A67F00CE2102 /* ListDetailViewController.swift in Sources */,
 				DA22BE971AD87A9900A7E210 /* AppDelegate.swift in Sources */,
 				DA22BE9A1AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld in Sources */,
+				DAAAB2D21B015299003E8D15 /* Checklist.swift in Sources */,
+				DA81A5FE1B30DA8C002C40D1 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +326,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -295,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,9 +393,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "You and Me List/You and Me List.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "You and Me List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.californiacodedesigns.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,9 +410,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "You and Me List/You and Me List.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "You and Me List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.californiacodedesigns.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -366,16 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "You and Me ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.californiacodedesigns.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/You and Me List.app/You and Me List";
 			};
@@ -385,12 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "You and Me ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.californiacodedesigns.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/You and Me List.app/You and Me List";
 			};
@@ -415,6 +472,7 @@
 				DA22BEB51AD87A9900A7E210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA22BEB61AD87A9900A7E210 /* Build configuration list for PBXNativeTarget "You and Me ListTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +481,7 @@
 				DA22BEB81AD87A9900A7E210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

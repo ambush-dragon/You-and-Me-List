@@ -8,16 +8,35 @@
 
 import UIKit
 import CoreData
+import CloudKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let dataModel = DataModel()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let navigationController = window!.rootViewController as! UINavigationController
+        let controller = navigationController.viewControllers[0] as! AllListsViewController
+        controller.dataModel = dataModel
+        
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+    
+        // Begin CloudKit
+        let container = CKContainer.defaultContainer()
+        _ = container.publicCloudDatabase
+        _ = container.privateCloudDatabase
+        
         return true
+    }
+    
+    func application(application: UIApplication,
+        didReceiveLocalNotification notification: UILocalNotification) {
+            print("didReceiveLocalNotification \(notification)")
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -26,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
+        saveData()
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
@@ -39,12 +59,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
+        saveData()
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
+        //self.saveContext()
     }
+    
+    func saveData() {
+        dataModel.saveYouandMeList()
+        
+    }
+}
 
+
+    
+
+    
+    
     // MARK: - Core Data stack
+    /*
 
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.californiacodedesigns.You_and_Me_List" in the application's documents Application Support directory.
@@ -107,5 +140,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-}
-
+} 
+    */
