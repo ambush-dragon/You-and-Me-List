@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579E56C98DC36A723DE45227 /* libPods-You and Me List.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111B75521C84E5051F798E89 /* libPods-You and Me List.a */; };
 		DA02A9AA1B02A67F00CE2102 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */; };
 		DA22BE971AD87A9900A7E210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE961AD87A9900A7E210 /* AppDelegate.swift */; };
 		DA22BE9A1AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE981AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld */; };
@@ -19,6 +20,7 @@
 		DA3986F31B6AE2E90098FFDB /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3986F21B6AE2E90098FFDB /* IconPickerViewController.swift */; };
 		DA5E96671AEEBF67003306EE /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E96661AEEBF67003306EE /* ItemDetailViewController.swift */; };
 		DA81A5FE1B30DA8C002C40D1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81A5FD1B30DA8C002C40D1 /* DataModel.swift */; };
+		DA84C32E1BD98292000B9AEE /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = DA84C32D1BD98292000B9AEE /* Podfile */; };
 		DA91AA1D1BBB404500FFFA80 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA91AA1C1BBB404500FFFA80 /* CloudKit.framework */; };
 		DA9B46C01ADC7CE900680F16 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B46BF1ADC7CE900680F16 /* ChecklistItem.swift */; };
 		DAAAB2D01B014BF9003E8D15 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAAB2CF1B014BF9003E8D15 /* AllListsViewController.swift */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111B75521C84E5051F798E89 /* libPods-You and Me List.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-You and Me List.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8FC5EFEFD8D1728654FC11 /* Pods-You and Me List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-You and Me List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List.debug.xcconfig"; sourceTree = "<group>"; };
+		55E5DCE8FC6FCA08C8B5D7DA /* Pods-You and Me List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-You and Me List.release.xcconfig"; path = "Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List.release.xcconfig"; sourceTree = "<group>"; };
 		DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ListDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA22BE911AD87A9900A7E210 /* You and Me List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "You and Me List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA22BE951AD87A9900A7E210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		DA3986F21B6AE2E90098FFDB /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 		DA5E96661AEEBF67003306EE /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA81A5FD1B30DA8C002C40D1 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DA84C32D1BD98292000B9AEE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA91AA1B1BBB403D00FFFA80 /* You and Me List.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "You and Me List.entitlements"; sourceTree = "<group>"; };
 		DA91AA1C1BBB404500FFFA80 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DA9B46BF1ADC7CE900680F16 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ChecklistItem.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -66,6 +72,7 @@
 			files = (
 				DA22BEBA1AD87ABA00A7E210 /* iAd.framework in Frameworks */,
 				DA91AA1D1BBB404500FFFA80 /* CloudKit.framework in Frameworks */,
+				579E56C98DC36A723DE45227 /* libPods-You and Me List.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,14 +86,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52333BB28A158A299489A956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111B75521C84E5051F798E89 /* libPods-You and Me List.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		537DA1BD41BEA3D89B54B9E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F8FC5EFEFD8D1728654FC11 /* Pods-You and Me List.debug.xcconfig */,
+				55E5DCE8FC6FCA08C8B5D7DA /* Pods-You and Me List.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA22BE881AD87A9900A7E210 = {
 			isa = PBXGroup;
 			children = (
+				DA84C32D1BD98292000B9AEE /* Podfile */,
 				DA91AA1C1BBB404500FFFA80 /* CloudKit.framework */,
 				DA22BEB91AD87ABA00A7E210 /* iAd.framework */,
 				DA22BE931AD87A9900A7E210 /* You and Me List */,
 				DA22BEAC1AD87A9900A7E210 /* You and Me ListTests */,
 				DA22BE921AD87A9900A7E210 /* Products */,
+				537DA1BD41BEA3D89B54B9E2 /* Pods */,
+				52333BB28A158A299489A956 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA22BEB31AD87A9900A7E210 /* Build configuration list for PBXNativeTarget "You and Me List" */;
 			buildPhases = (
+				24F8F6821AC4B6C8FFEE2E70 /* Check Pods Manifest.lock */,
 				DA22BE8D1AD87A9900A7E210 /* Sources */,
 				DA22BE8E1AD87A9900A7E210 /* Frameworks */,
 				DA22BE8F1AD87A9900A7E210 /* Resources */,
+				BDA42BBA9681587A26687BE6 /* Embed Pods Frameworks */,
+				844A7129520F618955A3DC5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +279,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24F8F6821AC4B6C8FFEE2E70 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		844A7129520F618955A3DC5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA42BBA9681587A26687BE6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA22BE8D1AD87A9900A7E210 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +338,7 @@
 				DA3986F31B6AE2E90098FFDB /* IconPickerViewController.swift in Sources */,
 				DAAAB2D01B014BF9003E8D15 /* AllListsViewController.swift in Sources */,
 				DA02A9AA1B02A67F00CE2102 /* ListDetailViewController.swift in Sources */,
+				DA84C32E1BD98292000B9AEE /* Podfile in Sources */,
 				DA22BE971AD87A9900A7E210 /* AppDelegate.swift in Sources */,
 				DA22BE9A1AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld in Sources */,
 				DAAAB2D21B015299003E8D15 /* Checklist.swift in Sources */,
@@ -391,6 +470,7 @@
 		};
 		DA22BEB41AD87A9900A7E210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8FC5EFEFD8D1728654FC11 /* Pods-You and Me List.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "You and Me List/You and Me List.entitlements";
@@ -408,6 +488,7 @@
 		};
 		DA22BEB51AD87A9900A7E210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E5DCE8FC6FCA08C8B5D7DA /* Pods-You and Me List.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "You and Me List/You and Me List.entitlements";
