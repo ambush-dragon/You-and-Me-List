@@ -12,7 +12,7 @@ import iAd
 class ChecklistViewController: UITableViewController, ADBannerViewDelegate, ItemDetailViewControllerDelegate {
     
     var checklist: Checklist!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
@@ -20,7 +20,7 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         self.canDisplayBannerAds = true
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,14 +33,14 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ChecklistItem", forIndexPath: indexPath)
-
-    let item = checklist.items[indexPath.row]
-
-    configureTextForCell(cell, withChecklistItem: item)
-    configureCheckmarkForCell(cell, withChecklistItem: item)
-
-    return cell
-
+        
+        let item = checklist.items[indexPath.row]
+        
+        configureTextForCell(cell, withChecklistItem: item)
+        configureCheckmarkForCell(cell, withChecklistItem: item)
+        
+        return cell
+        
     }
     
     //Checkmark toggle
@@ -52,23 +52,23 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
             configureCheckmarkForCell(cell, withChecklistItem: item)
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-
-    //End
+        
+        //End
         
     }
     
     //Swipe to Delete/Check method
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         checklist.items.removeAtIndex(indexPath.row)
-
+        
         let indexPaths = [indexPath]
         tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-
-    //End
+        
+        //End
         
     }
     
-        func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
+    func configureCheckmarkForCell(cell: UITableViewCell, withChecklistItem item: ChecklistItem) {
         let label = cell.viewWithTag(1001) as! UILabel
         
         if item.checked {
@@ -76,7 +76,7 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         } else {
             label.text = ""
         }
-            
+        
         //label.textColor = view.tintColor
     }
     
@@ -102,7 +102,7 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         
         dismissViewControllerAnimated(true, completion: nil)
         
-        }
+    }
     
     func itemDetailViewController(controller: ItemDetailViewController, didFinishEditingItem item: ChecklistItem) {
         if let index = checklist.items.indexOf(item) {
@@ -112,11 +112,11 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
             }
         }
         dismissViewControllerAnimated(true, completion: nil)
-
-    //End
+        
+        //End
         
     }
-
+    
     //Segue between Checklist and ItemDetail View Controllers
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -131,8 +131,8 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
             
             if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
                 controller.itemToEdit = checklist.items [indexPath.row]
-//End
+                //End
+            }
         }
     }
-}
 }

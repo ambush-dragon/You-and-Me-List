@@ -25,7 +25,7 @@ class ChecklistItem: NSObject, NSCoding {
         itemID = DataModel.nextChecklistItemID()
         super.init()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         text = aDecoder.decodeObjectForKey("Text") as! String
         checked = aDecoder.decodeBoolForKey("Checked")
@@ -34,7 +34,7 @@ class ChecklistItem: NSObject, NSCoding {
         itemID = aDecoder.decodeIntegerForKey("ItemID")
         super.init()
     }
-
+    
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(text, forKey: "Text")
         aCoder.encodeBool(checked, forKey: "Checked")
@@ -49,9 +49,9 @@ class ChecklistItem: NSObject, NSCoding {
             //println("Found an existing notification \(notification)")
             UIApplication.sharedApplication().cancelLocalNotification(notification)
         }
-
+        
         if shouldRemind && dueDate.compare(NSDate()) != NSComparisonResult.OrderedAscending {
-        let localNotification = UILocalNotification()
+            let localNotification = UILocalNotification()
             localNotification.fireDate = dueDate
             localNotification.timeZone = NSTimeZone.defaultTimeZone()
             localNotification.alertBody = text
@@ -83,5 +83,5 @@ class ChecklistItem: NSObject, NSCoding {
             UIApplication.sharedApplication().cancelLocalNotification(notification)
         }
     }
-
-    }
+    
+}

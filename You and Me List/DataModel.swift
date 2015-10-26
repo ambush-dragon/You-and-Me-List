@@ -18,7 +18,7 @@ class DataModel {
     }
     
     func documentsDirectory() -> String {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) 
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         return paths [0]
     }
     
@@ -43,7 +43,7 @@ class DataModel {
                 unarchiver.finishDecoding()
                 sortChecklists()
             }
-    }
+        }
         
     }
     
@@ -73,7 +73,7 @@ class DataModel {
             lists.append(checklist)
             indexOfSelectedChecklist = 0
             userDefaults.setBool(false, forKey: "FirstTime")
-    }
+        }
         
     }
     
@@ -90,5 +90,5 @@ class DataModel {
         userDefaults.synchronize()
         return itemID
     }
-
+    
 }

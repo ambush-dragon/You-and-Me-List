@@ -12,15 +12,15 @@ import iAd
 class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
     
     var dataModel: DataModel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
         self.canDisplayBannerAds = true
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
@@ -40,14 +40,14 @@ class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListD
             performSegueWithIdentifier("ShowChecklist", sender: checklist)
             
         }
-    
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+        
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataModel.lists.count
     }
@@ -115,16 +115,16 @@ class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListD
     }
     
     override func tableView(tableView: UITableView,
-            commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-                dataModel.lists.removeAtIndex(indexPath.row)
-                
-                let indexPaths = [indexPath]
-                tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
-        }
-        
+        commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+            dataModel.lists.removeAtIndex(indexPath.row)
+            
+            let indexPaths = [indexPath]
+            tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+    }
+    
     func listDetailViewControllerDidCancel(controller: ListDetailViewController) {
-            dismissViewControllerAnimated(true, completion: nil)
-        }
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     func listDetailViewController(controller: ListDetailViewController, didFinishAddingChecklist checklist: Checklist) {
         dataModel.lists.append(checklist)
@@ -145,4 +145,4 @@ class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListD
         }
     }
     
-    }
+}

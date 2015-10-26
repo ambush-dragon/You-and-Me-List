@@ -30,16 +30,16 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
         super.viewDidLoad()
         tableView.rowHeight = 50
         
-
-    if let checklist = checklistToEdit {
-        title = "Edit List"
-        textField.text = checklist.name
-        doneBarButton.enabled = true
-        iconName = checklist.iconName
-    }
-    
-    iconImageView.image = UIImage(named: iconName)
-
+        
+        if let checklist = checklistToEdit {
+            title = "Edit List"
+            textField.text = checklist.name
+            doneBarButton.enabled = true
+            iconName = checklist.iconName
+        }
+        
+        iconImageView.image = UIImage(named: iconName)
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -69,7 +69,7 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
         if indexPath.section == 1 {
             return indexPath
         } else {
-        return nil
+            return nil
             
         }
         
@@ -79,21 +79,21 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
         shouldChangeCharactersInRange range: NSRange,
         replacementString string: String) -> Bool {
             
-        let oldText: NSString = textField.text!
-        let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)
+            let oldText: NSString = textField.text!
+            let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)
             
-        doneBarButton.enabled = (newText.length > 0)
-        //println("Test")
-        return true
-
+            doneBarButton.enabled = (newText.length > 0)
+            //println("Test")
+            return true
+            
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "PickIcon" {
             let controller = segue.destinationViewController as! IconPickerViewController
             controller.delegate = self
         }
-    
+        
     }
     
     func iconPicker(picker: IconPickerViewController, didPickIcon iconName: String) {

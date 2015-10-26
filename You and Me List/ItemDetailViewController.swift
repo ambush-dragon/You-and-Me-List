@@ -16,7 +16,7 @@ protocol ItemDetailViewControllerDelegate: class {
 }
 
 class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     @IBOutlet weak var shouldRemindSwitch: UISwitch!
@@ -43,7 +43,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         
         updateDueDateLabel()
     }
-        
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         textField.becomeFirstResponder()
@@ -52,26 +52,26 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     
     @IBAction func cancel() {
         delegate?.itemDetailViewControllerDidCancel(self)
-    
+        
     }
-
+    
     @IBAction func done() {
         if let item = itemToEdit {
-        item.text = textField.text!
-        item.shouldRemind = shouldRemindSwitch.on
-        item.dueDate = dueDate
-        item.scheduleNotification()
-        delegate?.itemDetailViewController(self, didFinishEditingItem: item)
+            item.text = textField.text!
+            item.shouldRemind = shouldRemindSwitch.on
+            item.dueDate = dueDate
+            item.scheduleNotification()
+            delegate?.itemDetailViewController(self, didFinishEditingItem: item)
             
         } else {
             
-        let item = ChecklistItem()
-        item.text = textField.text!
-        item.checked = false
-        item.shouldRemind = shouldRemindSwitch.on
-        item.dueDate = dueDate
-        item.scheduleNotification()
-        delegate?.itemDetailViewController(self, didFinishAddingItem: item)
+            let item = ChecklistItem()
+            item.text = textField.text!
+            item.checked = false
+            item.shouldRemind = shouldRemindSwitch.on
+            item.dueDate = dueDate
+            item.scheduleNotification()
+            delegate?.itemDetailViewController(self, didFinishAddingItem: item)
         }
     }
     
@@ -88,7 +88,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         if indexPath.section == 1 && indexPath.row == 2 {
             
             var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("DatePickerCell")
-            as UITableViewCell?
+                as UITableViewCell?
             //CHECK OUT ABOVE as? UITableViewCell
             if cell == nil {
                 cell = UITableViewCell(style: .Default, reuseIdentifier: "DatePickerCell")
@@ -140,7 +140,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
         if indexPath.section == 1 && indexPath.row == 1 {
             return indexPath
         } else {
-        return nil
+            return nil
         }
     }
     
@@ -154,13 +154,13 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     func textField(textField: UITextField,
         shouldChangeCharactersInRange range: NSRange,
         replacementString string: String) -> Bool {
-        
-        let oldText: NSString = textField.text!
-        let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)
             
-        doneBarButton.enabled = (newText.length > 0)
-        //println("Test")
-        return true
+            let oldText: NSString = textField.text!
+            let newText: NSString = oldText.stringByReplacingCharactersInRange(range, withString: string)
+            
+            doneBarButton.enabled = (newText.length > 0)
+            //println("Test")
+            return true
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
