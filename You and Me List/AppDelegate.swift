@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import CoreData
-import CloudKit
+//import CoreData
+//import CloudKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,9 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
         
         // Begin CloudKit
-        let container = CKContainer.defaultContainer()
+        /*let container = CKContainer.defaultContainer()
         _ = container.publicCloudDatabase
-        _ = container.privateCloudDatabase
+        _ = container.privateCloudDatabase*/
+        //End CloudKit
         
         return true
     }
