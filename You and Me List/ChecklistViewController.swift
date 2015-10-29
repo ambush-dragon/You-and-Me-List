@@ -11,6 +11,8 @@ import iAd
 
 class ChecklistViewController: UITableViewController, ADBannerViewDelegate, ItemDetailViewControllerDelegate {
     
+    let firebase = Firebase(url: "https://you-and-me-list.firebaseio.com/")
+    
     var checklist: Checklist!
     
     override func viewDidLoad() {
@@ -18,9 +20,12 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         tableView.rowHeight = 50
         title = checklist.name
         self.canDisplayBannerAds = true
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        firebase.observeEventType(FEventType.Value) { (snapshot:FDataSnapshot!) -> Void in
+            print(snapshot.value)
+        }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
