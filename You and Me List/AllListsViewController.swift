@@ -11,12 +11,19 @@ import iAd
 
 class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
     
+    let firebase = Firebase(url: "https://you-and-me-list.firebaseio.com/")
+    
     var dataModel: DataModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
         self.canDisplayBannerAds = true
+        
+        firebase.observeEventType(FEventType.Value) { (snapshot:FDataSnapshot!) -> Void in
+            print(snapshot.value)
+            
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
