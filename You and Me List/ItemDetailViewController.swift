@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
-//MARK: This ViewController is a delegate of the second screen - ChecklistsViewController.
+//MARK: This ViewController is a delegate of the SECOND screen - ChecklistViewController.
 
 import UIKit
 

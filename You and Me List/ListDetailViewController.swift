@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
-//MARK: This ViewController is a delegate of the Main screen - AllListsViewController.
+//MARK: This ViewController is a delegate of the MAIN screen - AllListsViewController.
 
 import UIKit
 
