@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This ViewController is a delegate of the Main screen - AllListsViewController.
+
 import UIKit
 
 protocol ListDetailViewControllerDelegate: class {

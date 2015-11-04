@@ -26,11 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
         
-        // Begin CloudKit
+        //MARK: Begin CloudKit
         /*let container = CKContainer.defaultContainer()
         _ = container.publicCloudDatabase
         _ = container.privateCloudDatabase*/
-        //End CloudKit
+        //End
         
         return true
     }

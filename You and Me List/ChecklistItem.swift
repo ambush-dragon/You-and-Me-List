@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This controls the Notification/Reminder functionality.
+
 import Foundation
 import UIKit
 

@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This controls adding lists to the MAIN screen/AllListsViewController.
+
 import UIKit
 
 class Checklist: NSObject, NSCoding {

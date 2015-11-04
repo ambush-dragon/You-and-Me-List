@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This ViewCOntroller manages the the list icons for the App.
+
 import UIKit
 
 protocol IconPickerViewControllerDelegate: class {

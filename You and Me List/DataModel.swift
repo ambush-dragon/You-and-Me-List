@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This controls the Apps persistent storage.
+
 import Foundation
 
 class DataModel {

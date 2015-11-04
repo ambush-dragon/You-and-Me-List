@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This is the MAIN screen of the App. All Lists are displayed here.
+
 import UIKit
 import iAd
 
@@ -64,7 +66,6 @@ class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListD
         let cellIdentifier = "Cell"
         var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
             as UITableViewCell?
-        //CHECK OUT ABOVE as? UITableViewCell
         if cell == nil {
             cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
         }

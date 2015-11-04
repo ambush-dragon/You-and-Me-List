@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This is the SECOND screen of the App. Lists items appear here.
+
 import UIKit
 import iAd
 
@@ -48,7 +50,7 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         
     }
     
-    //Checkmark toggle
+    //MARK: Checkmark toggle
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             let item = checklist.items[indexPath.row]
@@ -62,7 +64,7 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         
     }
     
-    //Swipe to Delete/Check method
+    //MARK: Swipe to Delete/Check method
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         checklist.items.removeAtIndex(indexPath.row)
         
@@ -118,11 +120,9 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         }
         dismissViewControllerAnimated(true, completion: nil)
         
-        //End
-        
     }
     
-    //Segue between Checklist and ItemDetail View Controllers
+    //MARK: This is the Segue between the Checklist and ItemDetail View Controllers
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "AddItem" {

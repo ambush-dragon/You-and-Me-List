@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
+//MARK: This ViewController is a delegate of the second screen - ChecklistsViewController.
+
 import UIKit
 
 protocol ItemDetailViewControllerDelegate: class {
