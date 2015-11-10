@@ -500,11 +500,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="0Fh-Am-uhY" id="eoT-fO-QVe"/>
                         <outlet property="passwordTextField" destination="nzT-3N-rat" id="3c2-1U-M4n"/>
+                        <segue destination="9at-Xt-3cu" kind="show" identifier="loginSegue" id="q1m-Ht-u2d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lam-8p-gvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-372" y="355"/>
+            <point key="canvasLocation" x="-388" y="355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="73f-Ab-957">
@@ -524,7 +525,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBG-4j-PCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="355"/>
+            <point key="canvasLocation" x="55" y="355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A34-oO-ojD">
