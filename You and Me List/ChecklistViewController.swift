@@ -9,9 +9,8 @@
 //MARK: This is the SECOND screen of the App. Lists items appear here.
 
 import UIKit
-import iAd
 
-class ChecklistViewController: UITableViewController, ADBannerViewDelegate, ItemDetailViewControllerDelegate {
+class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
     
     let firebase = Firebase(url: "https://you-and-me-list.firebaseio.com/")
     
@@ -21,7 +20,6 @@ class ChecklistViewController: UITableViewController, ADBannerViewDelegate, Item
         super.viewDidLoad()
         tableView.rowHeight = 50
         title = checklist.name
-        self.canDisplayBannerAds = true
         
         firebase.observeEventType(FEventType.Value) { (snapshot:FDataSnapshot!) -> Void in
             print(snapshot.value)
