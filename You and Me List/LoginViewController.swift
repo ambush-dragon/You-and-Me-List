@@ -21,12 +21,14 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
         
     }
     @IBAction func SignupButton(sender: UIButton) {
-        firebase.createUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!) -> Void in
-            if (error != nil) {
-                print(error.localizedDescription)
-            } else {
-                print ("New user created")
-                self.logUser()
+        if checkFields() {
+            firebase.createUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!) -> Void in
+                if (error != nil) {
+                    print(error.localizedDescription)
+                } else {
+                    print ("New user created")
+                    self.logUser()
+                }
             }
         }
     }
@@ -43,14 +45,24 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     func logUser() {
-        print("Start logging user")
-        firebase.authUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!, authData:FAuthData!) -> Void in
-            if ( error != nil) {
-                print(error.localizedDescription)
-            } else {
-                print("user logged \(authData.description)")
+        if checkFields() {
+            print("Start logging user")
+            firebase.authUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!, authData:FAuthData!) -> Void in
+                if ( error != nil) {
+                    print(error.localizedDescription)
+                } else {
+                    print("user logged \(authData.description)")
+                }
             }
         }
     }
     
+    func checkFields()->Bool {
+        if ((!emailTextField.text!.isEmpty) && (!passwordTextField.text!.isEmpty)) {
+            return true
+        } else {
+            print("Empty field was found")
+            return false
+        }
+    }
 }
