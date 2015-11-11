@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UINavigationControllerDelegate {
+    
+    var dataModel: DataModel!
     
     var firebase = Firebase(url: "https://you-and-me-list.firebaseio.com/")
     
