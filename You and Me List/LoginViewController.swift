@@ -6,6 +6,8 @@
 //  Copyright © 2015 Paul Prestwood. All rights reserved.
 //
 
+//Mark: This is the login/signup screen for the app and will be the first screen displayed until user has signed in, then the AllListsViewController will be first.
+
 import UIKit
 
 class LoginViewController: UIViewController, UINavigationControllerDelegate {
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
                     self.displayMessage(error)
                 } else {
                     print("user logged \(authData.description)")
-                    self.performSegueWithIdentifier("loginSegue", sender: self)
+                    self.performSegueWithIdentifier("LoginSegue", sender: self)
                 }
             }
         }
