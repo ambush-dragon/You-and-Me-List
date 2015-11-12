@@ -25,6 +25,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
             firebase.createUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!) -> Void in
                 if (error != nil) {
                     print(error.localizedDescription)
+                    self.displayMessage(error)
                 } else {
                     print ("New user created")
                     self.logUser()
@@ -50,8 +51,10 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
             firebase.authUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!, authData:FAuthData!) -> Void in
                 if ( error != nil) {
                     print(error.localizedDescription)
+                    self.displayMessage(error)
                 } else {
                     print("user logged \(authData.description)")
+                    self.performSegueWithIdentifier("loginSegue", sender: self)
                 }
             }
         }
@@ -65,4 +68,14 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
             return false
         }
     }
+    
+    func displayMessage(error:NSError){
+        let titleMessage = "Error"
+        let alert = UIAlertController(title: titleMessage, message: error.localizedDescription, preferredStyle: .Alert)
+        let actionOK = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        alert.addAction(actionOK)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    
 }

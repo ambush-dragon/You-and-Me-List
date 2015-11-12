@@ -501,7 +501,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="0Fh-Am-uhY" id="eoT-fO-QVe"/>
                         <outlet property="passwordTextField" destination="nzT-3N-rat" id="3c2-1U-M4n"/>
-                        <segue destination="9at-Xt-3cu" kind="presentation" identifier="LoginSegue" id="mst-CC-wnf"/>
+                        <segue destination="9at-Xt-3cu" kind="show" identifier="LoginSegue" id="mst-CC-wnf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lam-8p-gvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -569,7 +569,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fhC-Pj-8Dp"/>
+        <segue reference="whV-li-23G"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.66274509803921566" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
