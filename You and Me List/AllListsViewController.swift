@@ -11,7 +11,7 @@ import iAd
 
 class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
     
-    var dataModel: DataModel!
+    let dataModel = DataModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
