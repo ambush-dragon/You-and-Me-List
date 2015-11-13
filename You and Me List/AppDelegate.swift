@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navigationController = window!.rootViewController as! UINavigationController
         let controller = navigationController.viewControllers[0] as! LoginViewController
-        //let controller = navigationController.viewControllers[0] as! AllListsViewController
+        //let controller = navigationController.viewControllers[1] as! AllListsViewController
         controller.dataModel = dataModel
         
         let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil)
