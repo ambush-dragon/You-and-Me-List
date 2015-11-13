@@ -15,7 +15,7 @@ class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListD
     
     let firebase = Firebase(url: "https://you-and-me-list.firebaseio.com/")
     
-    var dataModel: DataModel!
+    let dataModel = DataModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

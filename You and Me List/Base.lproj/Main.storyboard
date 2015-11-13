@@ -458,7 +458,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="LoginButton:" destination="MH4-Lo-M3y" eventType="touchUpInside" id="TiA-CW-5lX"/>
-                                    <segue destination="9at-Xt-3cu" kind="presentation" identifier="LoginSegue" id="WcF-Rr-Mk9"/>
+                                    <segue destination="9at-Xt-3cu" kind="show" identifier="LoginSegue" id="WcF-Rr-Mk9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLE-W9-DZP">
@@ -467,7 +467,7 @@
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="SignupButton:" destination="MH4-Lo-M3y" eventType="touchUpInside" id="CFD-MQ-iMO"/>
-                                    <segue destination="9at-Xt-3cu" kind="presentation" identifier="SignupSegue" id="b7c-rV-iJL"/>
+                                    <segue destination="9at-Xt-3cu" kind="show" identifier="SignupSegue" id="b7c-rV-iJL"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fh-Am-uhY">
@@ -570,8 +570,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WcF-Rr-Mk9"/>
         <segue reference="fhC-Pj-8Dp"/>
+        <segue reference="WcF-Rr-Mk9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.015686274509803921" green="0.66274509803921566" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
