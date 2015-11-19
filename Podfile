@@ -1,2 +1,3 @@
-platform :ios, '9.1'
-pod 'Firebase', '>= 2.4.2'
+target 'You and Me List' do
+    pod 'Firebase', '~> 2.4'
+end

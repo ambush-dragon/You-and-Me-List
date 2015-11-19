@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B22B937E3616CD7D14AF7279 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FECB5F773D07A5A1F3ED8BC9 /* libPods.a */; };
+		B86A6A20A7897A2AEF7FD010 /* libPods-You and Me List.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3694751D488110627FA9B5 /* libPods-You and Me List.a */; };
 		DA02A9AA1B02A67F00CE2102 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */; };
 		DA22BE971AD87A9900A7E210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE961AD87A9900A7E210 /* AppDelegate.swift */; };
 		DA22BE9A1AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA22BE981AD87A9900A7E210 /* You_and_Me_List.xcdatamodeld */; };
@@ -37,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		498EC93C91C0BF4A39EE509D /* Pods-You and Me List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-You and Me List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List.debug.xcconfig"; sourceTree = "<group>"; };
 		581A4D7972D1A3A231C7D843 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BD3694751D488110627FA9B5 /* libPods-You and Me List.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-You and Me List.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02A9A91B02A67F00CE2102 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ListDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DA22BE911AD87A9900A7E210 /* You and Me List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "You and Me List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA22BE951AD87A9900A7E210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		DAAAB2CF1B014BF9003E8D15 /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AllListsViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DAAAB2D11B015299003E8D15 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Checklist.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F170B2E3C1E333251FD666BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FBF2B44143A18D14F46C6A67 /* Pods-You and Me List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-You and Me List.release.xcconfig"; path = "Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List.release.xcconfig"; sourceTree = "<group>"; };
 		FECB5F773D07A5A1F3ED8BC9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,7 @@
 			files = (
 				DA22BEBA1AD87ABA00A7E210 /* iAd.framework in Frameworks */,
 				B22B937E3616CD7D14AF7279 /* libPods.a in Frameworks */,
+				B86A6A20A7897A2AEF7FD010 /* libPods-You and Me List.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FECB5F773D07A5A1F3ED8BC9 /* libPods.a */,
+				BD3694751D488110627FA9B5 /* libPods-You and Me List.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,6 +103,8 @@
 			children = (
 				F170B2E3C1E333251FD666BC /* Pods.debug.xcconfig */,
 				581A4D7972D1A3A231C7D843 /* Pods.release.xcconfig */,
+				498EC93C91C0BF4A39EE509D /* Pods-You and Me List.debug.xcconfig */,
+				FBF2B44143A18D14F46C6A67 /* Pods-You and Me List.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -290,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4FE18D147EE8103B95122C90 /* Check Pods Manifest.lock */ = {
@@ -320,7 +328,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-You and Me List/Pods-You and Me List-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -469,7 +477,7 @@
 		};
 		DA22BEB41AD87A9900A7E210 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F170B2E3C1E333251FD666BC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 498EC93C91C0BF4A39EE509D /* Pods-You and Me List.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -489,7 +497,7 @@
 		};
 		DA22BEB51AD87A9900A7E210 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 581A4D7972D1A3A231C7D843 /* Pods.release.xcconfig */;
+			baseConfigurationReference = FBF2B44143A18D14F46C6A67 /* Pods-You and Me List.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

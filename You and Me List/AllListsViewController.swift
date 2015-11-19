@@ -2,7 +2,7 @@
 //  AllListsViewController.swift
 //  You and Me List
 //
-//  Created by Paul Prestwood on 5/11/15.
+//  Created by Paul Prestwood on 5/11/15.//
 //  Copyright (c) 2015 Paul Prestwood. All rights reserved.
 //
 
@@ -14,6 +14,11 @@ import iAd
 class AllListsViewController: UITableViewController, ADBannerViewDelegate, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
     
     let firebase = Firebase(url: "https://you-and-me-list.firebaseio.com/")
+    
+    @IBAction func logout(sender: AnyObject) {
+        firebase.unauth()
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     let dataModel = DataModel()
     

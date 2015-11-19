@@ -36,10 +36,18 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        emailTextField.text = ""
+        passwordTextField.text = ""
         
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if firebase.authData != nil {
+            self.performSegueWithIdentifier("LoginSignupSegue", sender: self)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,7 +64,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
                     self.displayMessage(error)
                 } else {
                     print("user logged \(authData.description)")
-                    self.performSegueWithIdentifier("LoginSegue", sender: self)
+                    self.performSegueWithIdentifier("LoginSignupSegue", sender: self)
                 }
             }
         }
