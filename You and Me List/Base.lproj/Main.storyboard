@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Lists-->
@@ -22,21 +21,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lists" id="PHm-z5-l7W">
-                        <leftBarButtonItems>
-                            <barButtonItem title="Logout" id="F7K-Mb-zJN">
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="logout:" destination="OfH-r9-qg3" id="R7J-Ta-QDc"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem style="plain" id="p9d-mm-h5m">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4gb-x0-QRA">
-                                    <rect key="frame" x="70" y="7" width="71" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <animations/>
-                                </button>
-                            </barButtonItem>
-                        </leftBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="F7K-Mb-zJN">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logout:" destination="OfH-r9-qg3" id="R7J-Ta-QDc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cdo-pa-0q3">
                             <connections>
                                 <segue destination="xXl-Ab-nIi" kind="presentation" identifier="AddChecklist" id="nQS-77-wd9"/>
