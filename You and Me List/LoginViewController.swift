@@ -22,6 +22,7 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
         logUser()
         
     }
+    
     @IBAction func SignupButton(sender: UIButton) {
         if checkFields() {
             firebase.createUser(emailTextField.text, password: passwordTextField.text) { (error:NSError!) -> Void in
